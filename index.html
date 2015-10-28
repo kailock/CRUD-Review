@@ -1,1 +1,74 @@
-Product Review
+<!-- Kaitlin Lockhart
+     HTML for CRUD web app -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="author" content="Kaitlin Lockhart">
+    <meta name="description" content="Product Review">
+
+    <title>Pentatonix (Deluxe Version)</title>
+
+    <link rel="stylesheet" href="main.css">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="//www.parsecdn.com/js/parse-1.6.0.min.js"></script>
+    <script type="text/javascript" src="lib/jquery.raty-fa.js"></script>
+
+</head>
+
+<body>
+    <!--Intro information to the product-->
+    <div id="information" class="container-fluid">
+        <div class="row">
+            <div class="col-xs-6">
+                <img src="ptx.png" />
+
+            </div>
+            <div class="col-xs-6">
+                <div id="header" class="container-fluid">
+                    <h1>Pentatonix (Deluxe Edition)</h1>
+                    <h3>A review website</h3>
+                </div>
+
+                <p>Released October 16, 2015, "Pentatonix (Deluxe Edition)" is the a cappella group's first original
+                    album. In just a few days, it's already climbing the charts rapidly, now #1 on iTunes and as of
+                    October 26, 2015, #1 on Billboard.</p>
+
+                <p>Pentatonix is a five person a cappella group from Arlington, Texas whose beginnings started by winning
+                    The Sing-Off in 2011. Their main style is pop, and their music is well known for it's tight
+                    harmonies, vocal riffs, strong bass lines, unique vocal percussion, and sick drops.</p>
+
+                <p>wikipedia.org/wiki/Pentatonix</p>
+                <h3>Average Rating:</h3>
+                <div class="rating" id="avg-rating"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--Review form, to be added to bottom of site-->
+    <form id="form" role="form">
+        <div id="new-review" class="form-group">
+            <h2>Write your review</h2>
+            <div id= newRating class="rating"></div>
+            <input id="name" class="form-control" placeholder="Name" />
+            <input id="title" class="form-control" placeholder="Title your review here..." />
+            <textarea id="review" class="form-control" placeholder="Write your review here..."></textarea>
+            <button class=".btn-primary" type='submit'>Cast your judgement</button>
+        </div>
+    </form>
+
+    <div class="container-fluid">
+        <div id="past-reviews" class="container-fluid">
+            <!--All reviews put here-->
+        </div>
+    </div>
+
+</body>
+    <script type="text/javascript" src="review.js"></script>
+</html>

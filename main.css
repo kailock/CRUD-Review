@@ -1,1 +1,70 @@
-Product Review css
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+@import url(https://fonts.googleapis.com/css?family=Raleway:500,400);
+
+body div {
+    font-family: "Raleway", serif, sans-serif;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+.container-fluid {
+    height: 75%;
+}
+
+/* resize images */
+.container-fluid img {
+    width: 100%;
+    height: auto;
+}
+
+.delete {
+    float: right;
+    color: red;
+}
+
+#past-reviews div {
+    padding: 10px;
+}
+
+.rating {
+    color: gold;
+    margin: 0;
+}
+
+.titleInput, .reviewInput, .nameInput {
+    margin: auto;
+    padding-left: 10px;
+}
+
+.review {
+    background-color: #F3F3F3;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.nameInput {
+    font-style: italic;
+    font-size: 8pt;
+}
+
+.reviewInput {
+    font-style: normal;
+    font-size: 12pt;
+}
+
+.titleInput {
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .container-fluid img {
+        height: 50%;
+    }
+}
+
